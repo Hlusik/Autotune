@@ -1,0 +1,161 @@
+ .subscribe{
+    background:  #dcdde1;
+    display: flex;
+    align-items: center;
+    padding-top: 38px;
+    padding-bottom: 38px;
+ }
+
+ .subscribe-title{
+    font: 500 16px/1.2 "Rubik", sans-serif;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #101116;
+ }
+
+.subscribe > p {
+     color: #959595;
+     font-size: 14px;
+     margin-left: 2px;
+     margin-right: 37px;
+ }
+
+.subscribe-email{
+    height: 43px;
+    width: 580px;
+    padding: 8px 17px;
+    color: #959595;
+    font-size: 14px;
+    line-height: 1.42857;
+    box-sizing: border-box;
+    border-radius: 0;
+    border: none;
+}
+
+.subscribe-button{
+    background: #f42121;
+    border: none;
+    color: white;
+    width: 45px;
+    height: 43px;
+    padding: 0;
+    transition: 0.3s all ease;
+ }
+
+.subscribe-button:hover{
+  background: #101116;
+ }
+
+ .main-footer-info > p{
+     margin-bottom: 10px;
+     margin-top: 50px;
+     color: #959595;
+     font-size: 14px;
+ }
+
+ .main-footer-info{
+     width: 433px;
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+ }
+
+
+.main-footer-info > address, .main-footer-info > a{
+    font-size: 16px;
+    color: #101116;
+    margin-bottom: 13px;
+}
+
+.main-footer-info > address::before{
+    font-family: "FontAwesome";
+    margin-right: 10px;
+    content: "\f041";
+}
+
+.main-footer-info > .tel::before{
+    font-family: "FontAwesome";
+    margin-right: 10px;
+    content: "\f095";
+}
+
+.main-footer-info > .email::before{
+    font-family: "FontAwesome";
+    margin-right: 10px;
+    content: "\f0e0";
+}
+
+.main-footer{
+    margin: 100px 0;
+}
+
+.footer-info > h7{
+    font-size: 16px;
+    color: #101116;
+    text-transform: none;    
+    font-weight: 500;
+    margin-bottom: 35px;
+    font-family: "Rubik", sans-serif;
+}
+
+.footer-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-info  > a, .footer-bottom > a{
+    margin-bottom: 16px;
+    font-size: 14px;
+    transition: 0.3s all ease;
+}
+
+.footer-info  > a::before{
+    font-family: "FontAwesome";
+    content: "\f105";
+    color: #101116;
+    transition: 0.3s all ease;
+    padding-right: 10px;
+}
+
+.footer-info  > a:hover, .footer-bottom > a:hover{
+    color: #f42121;
+}
+
+.footer-bottom > a{
+    color: #959595;
+}
+
+.footer-info  > a:hover::before{
+    padding-right: 3px;
+}
+
+.main-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-bottom{
+    border-top: 1px solid #dbdcdc;
+    padding: 10px 40px 24px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom-payment > a{
+    background-image: url("../img/logo_paiement_visa.png"); 
+    width: 48px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 27px;
+}
+
+.footer-bottom-payment{
+    display: flex;
+}
+
+.main-footer .logo{
+    margin: 0;
+    padding: 0;
+}

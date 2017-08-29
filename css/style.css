@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-width: 320px;
+    height: 100%;
+    font: normal 14px/1.714 "Ubuntu", sans-serif;
+    color: #333333;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    background: rgb(241, 241, 241);
+}
+
+ul, li {
+  list-style-type: none;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h2{
+  font: 58px "Ubuntu",sans-serif;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h3, .carousel-item-title{
+  font-family: "Ubuntu",sans-serif;
+  text-transform: uppercase;
+  font-size: 34px;
+  margin-bottom: 21px;
+  font-weight: 300;
+}
+
+h3 > span, .carousel-item-title span{
+  font-weight: bold;
+}
+
+h3 > span::before, .carousel-item-title > span::before{
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px;
+  border-bottom: 2px solid red;
+  margin-right: 18px;
+}
+
+h3 + a{
+    display: inline-block;
+    position: relative;
+    font-family: "Rubik", sans-serif;
+    letter-spacing: 0.04em;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-right: 17px;
+    cursor: pointer;
+    transition: 0.3s all ease;
+    color: #959595;
+}
+
+h3 + a:hover, h5 > a:hover, h7 > a:hover{
+    outline: none;
+    text-decoration: none;
+    color: #f42121;
+}
+
+h3 + a::after{
+    margin-left: 10px;
+    font-family: "FontAwesome";
+    content: "\f105";
+    transform: translate(0, -50%);
+    color: #f42121;
+}
+
+h5 > a, h7 > a{
+    color: #101116;
+    transition: 0.3s all ease;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.3s all ease;
+}
+
+h7 > a{
+    font-size: 20px;
+    color: #101116;
+    text-transform: none;    
+}
+
+
+.logo{
+    margin-left: 40px;
+}
+.info-buttons{
+    margin-right: 40px;
+}
+
+.menu, .popular-categories,.top-brands, .new-and-articles-top, .subscribe, .main-footer, .footer-bottom{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.social-section-dropdowns-currency-button:focus, .social-section-dropdowns-leanguage-button:focus, button:focus, a:focus, input:focus, select:focus{
+    outline: none;
+}
+

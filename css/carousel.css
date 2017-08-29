@@ -1,0 +1,127 @@
+.carousel{
+    background-image: url("../img/prslider-bg.jpg");
+    padding: 50px;
+    height: 403px;
+}
+
+.carousel-buttons{
+    position: absolute;
+    z-index: 10;
+}
+
+.carousel-item-img{
+    width: 375px;
+    height: 375px;
+}
+
+.carousel-item{
+    display: none;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.carousel-item[data-state=active] {
+  display: flex;
+}
+
+.carousel-item-text{
+    color: #959595;
+    font-size: 14px;
+}
+
+.carousel-item-subtitle{
+    color: white;
+    transition: 0.3s all ease;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    transition: 0.3s all ease;
+    padding: 20px 0;
+}
+
+.carousel-item-subtitle:hover{
+    outline: none;
+    text-decoration: none;
+    color: #f42121;
+}
+
+.carousel-text .carousel-item-title, .carousel-item-price{
+    font-size: 28px;
+    color: white;
+}
+
+.carousel-item-price{
+    font-weight: bold;
+}
+
+.carousel-text{
+    display: flex;
+    flex-direction: column;
+    width: 622px;
+    margin-left: 35px;
+}
+
+.carousel-item-button{
+    width: 133px;
+    height: 35px;
+    font-size: 12px;
+    padding: 1px;
+}
+
+.carousel-buttons-right, .carousel-buttons-left{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(149,149,149,0.7);
+    text-align: center;
+    margin-top: -29px;
+    overflow: visible;
+    -moz-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+    margin-right: 10px;
+    opacity: 0.8;
+}
+
+.carousel-buttons-right::before, .carousel-buttons-left::before{
+    display: inline-block;
+    font-family: "FontAwesome";    
+    font-weight: normal;
+    margin-left: 15px;
+    margin-top: 8px;
+    font-size: 20px;
+    color: white;
+    z-index: 1;
+    position: absolute;
+}
+
+.carousel-buttons-right::before{
+    content: "\f104";
+}
+.carousel-buttons-left::before{
+    content: "\f105";
+}
+
+.carousel-buttons-right:hover, .carousel-buttons-left:hover{
+    background: #f42121;
+}
+
+.carousel-buttons-right::after, .carousel-buttons-left:after{
+    display: inline-block;
+    content: '';
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #f42121;
+    opacity: 0;
+    transition: 0.2s all ease; 
+}
+.carousel-buttons-right:hover::after, .carousel-buttons-left:hover::after{
+    opacity: 0.5;
+    transform: scale(1.328,1.328);
+}

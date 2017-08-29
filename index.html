@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/search.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/carousel.css" />    
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="js_war/katas.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <title>Autotune</title>
+</head>
+<body>
+    <header>
+        <aside class="social-section">
+            <ul class="social-section-info">
+                <li class="social-section-info-tel">
+                    <a href="tel:012-3456-789">012-3456-789, </a> 
+                    <a href="tel:012-3456-790"> 012-3456-790</a>
+                </li>
+                <li class="social-section-info-satisfaction">
+                    Satisfaction is 100% Guaranteed 
+                </li>
+                <li class="social-section-info-delivery">
+                    On - TIme Delivery
+                </li>
+            </ul>
+            <article class="social-section-dropdowns">
+                <nav id="social-section-dropdowns-currency"" class="social-section-dropdowns-currency">
+                    <button id="social-section-dropdowns-currency-button" class="social-section-dropdowns-currency-button">USD Dollar</button>
+                    <nav class="social-section-dropdowns-currency-items" id="social-section-dropdowns-currency-items">
+                        <a href="">Dollar (USD)</a>
+                        <a href="">Euro (EUR)</a>
+                    </nav>
+                </nav>
+                <nav class="social-section-dropdowns-leanguage">
+                    <button id="social-section-dropdowns-leanguage-button" class="social-section-dropdowns-leanguage-button" >English</button>
+                    <nav class="social-section-dropdowns-leanguage-items" id="social-section-dropdowns-leanguage-items">
+                        <a href="">English</a>
+                        <a href="">Deutsch</a>
+                        <a href="">Русский</a>
+                        <a href="">Español</a>
+                        <a href="">Français</a>
+                    </nav>
+                </nav>
+        </article>
+        </aside>
+		<a class="logo" href=" " title="Autotune"></a>
+        <form class="main-search">
+            <select name="main-search-categories" class="main-search-categories">
+              <option value="2">All Categories</option>
+              <option value="12">--Accessories</option>
+              <option value="24">---Car Covers</option>
+              <option value="25">---Car Bras</option>
+              <option value="26">---Sun Shades</option>
+              <option value="27">---Vinyl Floor Kits</option>
+              <option value="28">---Window Visors</option>
+              <option value="29">---Tonneau Covers</option>
+              <option value="30">---Deck Covers</option>
+              <option value="31">---Nerf Bars</option>
+              <option value="32">---Hitches</option>
+              <option value="33">---Roof Racks</option>
+              <option value="34">---Serpentine Belts</option>
+              <option value="35">---Brake Hoses</option>
+              <option value="36">---Rocker Panel Trims</option>
+              <option value="37">---Connectors</option>
+              <option value="38">---Bug Shields</option>
+              <option value="39">---Universal Air Filters</option>
+              <option value="40">---Fender Flares</option>
+              <option value="41">---Off-Road Bumpers</option>
+              <option value="42">---Big Brake Kits</option>
+              <option value="43">---Grille Guards</option>
+              <option value="44">---Coverking</option>
+              <option value="45">---Covercraft</option>
+              <option value="46">---AutoCustomCarpets</option>
+              <option value="47">---Colgan Custom</option>
+              <option value="48">---Weathertech</option>
+              <option value="49">---Dorman</option>
+              <option value="13">--Body Parts</option>
+              <option value="50">---Catalytic Converter</option>
+              <option value="57">----Spectra</option>
+              <option value="58">----Performance Radiator</option>
+              <option value="59">----ProRad</option>
+              <option value="60">----CSF</option>
+              <option value="61">----Griffin Thermal Products</option>
+              <option value="62">----Replacement</option>
+              <option value="51">---Door Handle</option>
+              <option value="52">---Control Arm</option>
+              <option value="53">---Radiator</option>
+              <option value="54">---Headlight</option>
+              <option value="55">---Mirror</option>
+              <option value="56">---Window Regulator</option>
+              <option value="14">--Body Electrical</option>
+              <option value="15">--Brakes</option>
+              <option value="16">--Car Care</option>
+              <option value="63">---Air, Fuel, Emission &amp; Exhaust</option>
+              <option value="17">--Climate Control</option>
+              <option value="18">--Clutches</option>
+              <option value="19">--Driveshafts &amp; Axles</option>
+              <option value="20">--Transmission</option>
+          </select>
+          <input class="main-search-query" type="text" id="main-search-query" name="main-search-query" placeholder="Search" value="" autocomplete="off">
+          <button type="submit" name="main-search-button" class="main-search-button"></button>
+        </form>
+        <section class="info-buttons">
+            <a href="" title="User Info" class="info-buttons-user-info"></a>
+            <a href="" title="My wishlists" class="info-buttons-user-wishlists"></a>
+            <a href="" title="View my shopping cart" class="info-buttons-user-cart"></a>
+        </section>
+		<nav class="menu" id="menu">
+            <li class="menu-item">
+                <a href=" ">Accessories</a>
+				<nav class="menu-item-submenu"> 
+					<a href=" ">Home2</a>
+					<a href=" ">Home3</a>
+				</nav>
+            </li>
+            <li class="menu-item">
+                <a href=" ">Body Parts</a>
+				<nav class="menu-item-submenu"> 
+					<a href=" ">Home2</a>
+					<a href=" ">Home3</a>
+				</nav>
+            </li>
+            <li class="menu-item">
+                <a href=" ">Body Electrical</a>
+            </li>
+            <li class="menu-item">
+                <a href=" ">Brakes</a>
+            </li>
+            <li class="menu-item">
+                <a href=" ">Car Care</a>
+            </li>
+            <li class="menu-item">
+                <a href=" ">Climate Control</a>
+            </li>
+            <li class="menu-item">
+                <a href=" ">Cluthes</a>
+            </li>
+            <li class="menu-item">
+                <a href=" ">Driveshfts &amp; Axles</a>
+            </li>
+            <li class="menu-item">
+                <a href=" ">Transmission</a>
+            </li>
+		</nav>
+    </header>
+    <main>
+        <section class="paralax">
+            <h2 class="paralax-title">FAVORITE PRODUCT DISCOUNT</h2>
+            <h4 class="paralax-subtitle">OUR AUTO PARTS FOR SALE</h3>
+        
+            <section class="search">
+                <h3 class="search-title"><span>SEARCH</span> FROM OVER 1 MILLION PRODUCTS</h3>
+                <form class="search-form">
+                    <section class="search-vehicle">
+                        <label>Vehicle</label>
+                        <input type="radio" name="Vehicle" value="car" checked> Car (14)
+                        <input type="radio" name="Vehicle" value="truck" checked> Truck (6)
+                    </section>
+                    <section class="search-Manufacturer">
+                        <label>Manufacturer</label>
+                        <select>
+                            <option>--</option>
+                            <option>Original</option>
+                            <option>Analogue</option>        
+                        </select>
+                    </section>
+                    <section class="search-Parts-type">
+                        <label>Parts type</label>
+                        <select>
+                            <option>--</option>
+                            <option>Original</option>
+                            <option>Analogue</option>        
+                        </select>
+                    </section>
+                    <section class="search-make">
+                        <label>Make</label>
+                        <select>
+                            <option>--</option>
+                            <option>Original</option>
+                            <option>Analogue</option>        
+                        </select>
+                    </section>
+                    <section class="search-model">
+                        <label>Model</label>
+                        <select disabled="disabled">
+                            <option>--</option>
+                            <option>Original</option>
+                            <option>Analogue</option>        
+                        </select>
+                    </section>
+                    <section class="search-condition">
+                        <label>Condition</label>
+                        <select>
+                            <option>--</option>
+                            <option>Original</option>
+                            <option>Analogue</option>        
+                        </select>
+                    </section>
+                    <section class="search-price">
+                        <label>Price</label>
+                        <input class="search-price-from" data-type="price" value="" autocomplete="off" placeholder="from ($)">
+                        <input class="search-price-to" data-type="price" value="" autocomplete="off" placeholder="to ($)">
+                    </section>
+                    <section class="search-result">
+                        <button class="search-button">Show</button>
+                        <p><label class="search-products">0</label> Products</p>
+                    </section>
+                </form>
+            </section>
+        </section>
+        
+		<section class="popular-categories">    
+            <div>        
+                <h3 class="search-title"><span>POPULAR</span> CATEGORIES</h3>
+                <a href="">see all categories</a>
+            </div>
+            <article class="popular-categories-air">
+                <h5 class="popular-categories-title"><a href=""> AIR, FUEL, EMISSION &amp; EXHAUST</a></h5>
+                <div>
+                    <a href="">Air Filters &amp; Related </a>
+                    <a href="">Carburetion</a>
+                    <a href="">Emission</a>
+                    <a href="">Exhaust</a>
+                    <a href="">Fuel &amp; Oil Filters</a>
+                    <a href="" class=view-all>VIEW ALL</a>
+                </div>
+            </article>
+            <article class="popular-categories-air">
+                <h5 class="popular-categories-title"><a href="">ACCESSORIES &amp; INTERIOR</a></h5>
+                <div>
+                    <a href="">Custom Grilles </a>
+                    <a href="">Body Kits</a>
+                    <a href="">Off-Road Bumpers</a>
+                    <a href="">Bed Accessories</a>
+                    <a href="">Grille Guards</a>
+                    <a href="" class=view-all>VIEW ALL</a>
+                </div>
+            </article>
+            <article class="popular-categories-air">
+                <h5 class="popular-categories-title"><a href="">BATTERIES, ELECTRICAL &amp; WIRING</a></h5>
+                <div>
+                    <a href="">Air Bag System</a>
+                    <a href="">Batteries</a>
+                    <a href="">Battery Components</a>
+                    <a href="">Charging System</a>
+                    <a href="">Electrical Connectors</a>
+                    <a href="" class=view-all>VIEW ALL</a>
+                </div>
+            </article>
+            <article class="popular-categories-air">
+                <h5 class="popular-categories-title"><a href="">BODY PARTS</a></h5>
+                <div>
+                    <a href="">Front Bumpers</a>
+                    <a href="">Bonnet Hoods</a>
+                    <a href="">Fender Panels</a>
+                    <a href="">Back Door Parts</a>
+                    <a href="">Window Shields</a>
+                    <a href="" class=view-all>VIEW ALL</a>
+                </div>
+            </article>
+            <article class="popular-categories-air">
+                <h5 class="popular-categories-title"><a href="">LIGHTING &amp; ELECTRONICS</a></h5>
+                <div>
+                    <a href="">Headlights</a>
+                    <a href="">Tail Lights</a>
+                    <a href="">Side Mirrors</a>
+                    <a href="">Engine Computer</a>
+                    <a href="">Power Window Switches</a>
+                    <a href="" class=view-all>VIEW ALL</a>
+                </div>
+            </article>
+            <article class="popular-categories-air">
+                <h5 class="popular-categories-title"><a href="">COOLING &amp; HEATING</a></h5>
+                <div>
+                    <a href="">Accumulators &amp; Driers</a>
+                    <a href="">Clutches &amp; Compressors</a>
+                    <a href="">Tools, Hardware</a>
+                    <a href="">Water Pumps</a>
+                    <a href="">Cooling Fans</a>
+                    <a href="" class=view-all>VIEW ALL</a>
+                </div>
+            </article>
+		</section>
+        <section class="top-brands">
+            <div>
+                <h3 class="search-title"><span>TOP</span> BRANDS</h3>
+                <a href="">see all brands</a>
+            </div>
+            <figure>
+                <img src="../Autotune/img/10-manufacturers_default.jpg" alt="The Pulpit Rock" width="140" height="70">
+            </figure>
+            <figure>
+                <img src="../Autotune/img/10-manufacturers_default.jpg" alt="The Pulpit Rock" width="140" height="70">
+            </figure>
+            <figure>
+                <img src="../Autotune/img/10-manufacturers_default.jpg" alt="The Pulpit Rock" width="140" height="70">
+            </figure>
+            <figure>
+                <img src="../Autotune/img/10-manufacturers_default.jpg" alt="The Pulpit Rock" width="140" height="70">
+            </figure>
+            <figure>
+                <img src="../Autotune/img/10-manufacturers_default.jpg" alt="The Pulpit Rock" width="140" height="70">
+            </figure>
+            <figure>
+                <img src="../Autotune/img/10-manufacturers_default.jpg" alt="The Pulpit Rock" width="140" height="70">
+            </figure>
+            <figure>
+                <img src="../Autotune/img/10-manufacturers_default.jpg" alt="The Pulpit Rock" width="140" height="70">
+            </figure>
+            <figure>
+                <img src="../Autotune/img/10-manufacturers_default.jpg" alt="The Pulpit Rock" width="140" height="70">
+            </figure>
+            <figure>
+                <img src="../Autotune/img/10-manufacturers_default.jpg" alt="The Pulpit Rock" width="140" height="70">
+            </figure>
+            <figure>
+                <img src="../Autotune/img/10-manufacturers_default.jpg" alt="The Pulpit Rock" width="140" height="70">
+            </figure>
+            <figure>
+                <img src="../Autotune/img/10-manufacturers_default.jpg" alt="The Pulpit Rock" width="140" height="70">
+            </figure>
+            <figure>
+                <img src="../Autotune/img/10-manufacturers_default.jpg" alt="The Pulpit Rock" width="140" height="70">
+            </figure>
+		</section>
+        <section class="carousel" id="carousel">
+            <section class="carousel-buttons">
+                <button class="carousel-buttons-right"></button>
+                <button class="carousel-buttons-left"></button>
+            </section>
+            <section class="carousel-slides" id="carousel-slides">
+                <article class="carousel-item" data-state="active">
+                    <img class="carousel-item-img" src="../Autotune/img/119-large_default.jpg"/>
+                    <section class="carousel-item-subcarusel"></section>
+                    <section class="carousel-text">
+                        <h5 class="carousel-item-title"><span>THIS WEEK'S</span> hot deals</h5>
+                        <a class="carousel-item-subtitle">Sportseat Set Evolution Fabric Red </a>
+                        <p class="carousel-item-text">So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place because you might be interested in professional spare...</p>
+                        <label class="carousel-item-price">$40</label>
+                        <button class="carousel-item-button">Add to cart</button>
+                    </section>
+                </article>
+                <article class="carousel-item">
+                    <img class="carousel-item-img" src="../Autotune/img/66-large_default.jpg"/>
+                    <section class="carousel-item-subcarusel"></section>
+                    <section class="carousel-text">
+                        <h5 class="carousel-item-title">THIS WEEK'S hot deals</h5>
+                        <h6 class="carousel-item-subtitle">Sportseat Set Evolution Fabric Red</h6>
+                        <p class="carousel-item-text">So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place because you might be interested in professional spare...</p>
+                        <label class="carousel-item-price">$40</label>
+                        <button class="carousel-item-button">Add to cart</button>
+                    </section>
+                </article>
+                <article class="carousel-item">
+                    <img class="carousel-item-img" src="../Autotune/img/119-large_default.jpg"/>
+                    <section class="carousel-item-subcarusel"></section>
+                    <section class="carousel-text">
+                        <h5 class="carousel-item-title">THIS WEEK'S hot deals</h5>
+                        <h6 class="carousel-item-subtitle">Sportseat Set Evolution Fabric Red</h6>
+                        <p class="carousel-item-text">So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place because you might be interested in professional spare...</p>
+                        <label class="carousel-item-price">$40</label>
+                        <button class="carousel-item-button">Add to cart</button>
+                    </section>
+                </article>
+                <article class="carousel-item">
+                    <img class="carousel-item-img" src="../Autotune/img/66-large_default.jpg"/>
+                    <section class="carousel-item-subcarusel"></section>
+                    <section class="carousel-text">
+                        <h5 class="carousel-item-title">THIS WEEK'S hot deals</h5>
+                        <h6 class="carousel-item-subtitle">Sportseat Set Evolution Fabric Red</h6>
+                        <p class="carousel-item-text">So, if you like listening to the sound of your engine, or if you like the smell of burning rubber of your wheels, you are in the right place because you might be interested in professional spare...</p>
+                        <label class="carousel-item-price">$40</label>
+                        <button class="carousel-item-button">Add to cart</button>
+                    </section>
+                </article>
+            </section>
+		</section>
+        <section class="products">
+		</section>
+        <section class="new-and-articles-top">
+            <div>
+                <h3 class="search-title"><span>NEWS</span> AND ARTICLES</h3>
+                <a href="">see all news</a>
+            </div>
+            <section class="new-and-articles">
+                <article class="new-and-articles-main">
+                    <figure>
+                        <img src="../Autotune/img/9-home-default.jpg" alt="The Pulpit Rock">
+                    </figure>
+                    <small><span class="red-text">BY ADMIN</span> - CATALYTIC CONVERTER | <span class="red-text"> JUNE 01, 2017</span></small>
+                    <h7 class="new-and-articles-main-title"><a href=""> The Cars Deemed Most Likely to Speed by Insurers</a></h7>
+                    <p class="new-and-articles-main-text">We all know the game by now. You head to your dealer to get your car serviced, you leave paying a healthy markup on pretty much everything, then you tell yourself that it’s okay because at least you got everything done through the proper channels. Even so, you don’t leave with a sense of total …</p>
+                </article>
+                <section class="new-and-articles-all">
+                    <article class="new-and-articles-all-items">
+                        <img src="../Autotune/img/9-home-default.jpg" alt="The Pulpit Rock">
+                        <small><span class="red-text">BY ADMIN</span> - CATALYTIC CONVERTER | <span class="red-text"> JUNE 01, 2017</span></small>
+                        <h7 class="new-and-articles-all-title"><a href=""> The Cars Deemed Most Likely to Speed by Insurers</a></h7>
+                    </article>
+                    <article class="new-and-articles-all-items">
+                        <img src="../Autotune/img/9-home-default.jpg" alt="The Pulpit Rock">
+                        <small><span class="red-text">BY ADMIN</span> - CATALYTIC CONVERTER | <span class="red-text"> JUNE 01, 2017</span></small>
+                        <h7 class="new-and-articles-all-title"><a href=""> The Cars Deemed Most Likely to Speed by Insurers</a></h7>
+                    </article>
+                    <article class="new-and-articles-all-items">
+                        <img src="../Autotune/img/9-home-default.jpg" alt="The Pulpit Rock">
+                        <small><span class="red-text">BY ADMIN</span> - CATALYTIC CONVERTER | <span class="red-text"> JUNE 01, 2017</span></small>
+                        <h7 class="new-and-articles-all-title"><a href=""> The Cars Deemed Most Likely to Speed by Insurers</a></h7>
+                    </article>
+                    <article class="new-and-articles-all-items">
+                        <img src="../Autotune/img/9-home-default.jpg" alt="The Pulpit Rock">
+                        <small><span class="red-text">BY ADMIN</span> - CATALYTIC CONVERTER | <span class="red-text"> JUNE 01, 2017</span></small>
+                        <h7 class="new-and-articles-all-title"><a href=""> The Cars Deemed Most Likely to Speed by Insurers</a></h7>
+                    </article>
+                </section>                
+            </section>
+            
+                    <button class="new-and-articles-button">More</button>
+     
+        </section>
+    </main>
+    <footer>
+        <section class="subscribe">
+            <h5 class="subscribe-title">SUBSCRIBE TO OUR NEWSLETTER</h5>
+            <p>and receive the latest updates straight to your inbox
+            </p>
+            <input class="subscribe-email" type="email" name="email" placeholder="Enter your e-mail"/>
+            <button class="subscribe-button"></button>
+        </section>
+        <section class="main-footer">
+            <article class="main-footer-info">
+                <a class="logo" href=" " title="Autotune"></a>
+                <p>We spend endless hours in traffic jams; we like to eat in a car, like to listen to music and so on. Our industry made a great number of legendary cars, and this is a true argument that it is essential part of our life.</p>
+                <address>My Company , 4578 Marmora Road, Glasgow D04 89GR</address>
+                <a class="tel" href="tel:0123-456-789">0123-456-789</a>
+                <a class="email" href="mailto:info@demolink.org">info@demolink.org </a>            
+            </article>
+            <nav class="footer-info">
+                <h7>INFORMATION</h7>
+                <a href="">Specials</a>
+                <a href="">New products</a>
+                <a href="">Top sellers</a>
+                <a href="">Our stores</a>
+                <a href="">Contact us</a>
+                <a href="">About us</a>
+                <a href="">Pages configuration</a>
+                <a href="">Sitemap</a>
+                <a href="">Blog</a>
+            </nav>
+            <nav class="footer-info">
+                <h7>INFORMATION</h7>
+                <a href="">Specials</a>
+                <a href="">New products</a>
+                <a href="">Top sellers</a>
+                <a href="">Our stores</a>
+                <a href="">Contact us</a>
+                <a href="">About us</a>
+                <a href="">Pages configuration</a>
+                <a href="">Sitemap</a>
+                <a href="">Blog</a>
+            </nav>
+            <nav class="footer-info">
+                <h7>INFORMATION</h7>
+                <a href="">Specials</a>
+                <a href="">New products</a>
+                <a href="">Top sellers</a>
+                <a href="">Our stores</a>
+                <a href="">Contact us</a>
+                <a href="">About us</a>
+                <a href="">Pages configuration</a>
+                <a href="">Sitemap</a>
+                <a href="">Blog</a>
+            </nav>
+            <aside class="footer-social-buttons">
+                <a href="" class="facebook"></a>
+                <a href="" class="twiter"></a>
+                <a href="" class="google"></a>
+                <a href="" class="pinterest"></a>
+                <a href="" class="instagram"></a>
+            </aside>
+        </section>
+        <section class="footer-bottom">
+            <a>&copy; 2017 - Ecommerce software by PrestaShop&trade;</a>
+            <aside class="footer-bottom-payment">
+                <a href="" class="visa"></a>
+                <a href="" class="mastercard"></a>
+                <a href="" class="maestro"></a>
+                <a href="" class=americanexpress""></a>
+                <a href="" class="paypal"></a>
+            </aside>
+        </section>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
