@@ -1,13 +1,10 @@
 // ------------------------------- 1 ---------------------------------------------
 
-//var num = '$' + number.toFixed(2).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
-
 var currency = (number) => '$' + number.toFixed(2);
 console.log(currency(3));
 
 // ------------------------------- 2 ---------------------------------------------
 
-// object or swich
 let dictionary = {
         Jabroni: "Patron Tequila",
         [ 'School Counselor' ]: "Anything with Alcohol",
@@ -47,14 +44,7 @@ avgArray_1 = [[1, 2, 3, 4], [5, 6, 7, 8]]; // => [3, 4, 5, 6]
 avgArray_2= [[2, 3, 9, 10, 7], [12, 6, 89, 45, 3], [9, 12, 56, 10, 34], [67, 23, 1, 88, 34]]; // => [22.5, 11, 38.75, 38.25, 19.5]
 
 function averageArray(array){
-  //c  let newArray1 = array[0].map(function(col, i) { 
-       // return array.map(function(row) { 
-           // return row[i] 
-       // })
-    //});
-
     let newArray = array[0].map((col, i) => array.map(row => row[i]));
-
     let sum = 0;
     let avgArr = [];
     for (let value of newArray) {
@@ -90,8 +80,6 @@ console.log(deepCount(deepCount_3));
 
 // ------------------------------- 6 ---------------------------------------------
 
-// obj.there().are().two().kinds().of().people();
-
 function functionator(str) {
     let array = str.split(' ');   
     return doFunction(null, array);
@@ -101,12 +89,12 @@ function doFunction(child, arr, arrLength){
     var obj = {['' + arr[arr.length - 1] + '']: function(){return child;}};
     if(arr.length == 1)
     {
-        return obj
+        return obj;
     }
     else
     {
         arr.pop();
-        return doFunction(obj, arr)
+        return doFunction(obj, arr);
     }
 }
 
@@ -118,15 +106,3 @@ function functionatorEvalString(objName, string)
 var str = 'there are two kinds of people';
 var func = functionator(str);
 func.there().are().two().kinds().of().people();
-//eval(functionatorEvalString('func', str));
-
-
-/*let obj ={
-        there: function (){
-            var obj = {
-                are:function(){return 2;}}
-            return obj;
-        }
-    }*/
-
-   // obj.there().are();
